@@ -1,0 +1,12 @@
+.employee-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 10px 0;
+}
