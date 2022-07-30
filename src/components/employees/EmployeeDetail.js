@@ -5,7 +5,6 @@ import { useParams } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 
 const EmployeeDetail = () => {
-  // const navigate = useNavigate();
   const { id } = useParams();
   const employees = useSelector((state) => state.employee);
   const employee = employees.find((item) => item.id === id);
