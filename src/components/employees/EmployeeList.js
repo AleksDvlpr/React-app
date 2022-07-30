@@ -18,7 +18,7 @@ const EmployeeList = () => {
       </div>
       <div className="list-group">
         {employees.map((item, index) => {
-          return <EmployeeLink key={index} data={item} />;
+          return <EmployeeLink key={index} employee={item} />;
         })}
       </div>
     </div>

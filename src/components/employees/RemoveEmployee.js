@@ -2,12 +2,12 @@ import React from 'react';
 import { removeEmployee } from '../../features/employee/employeeSlice';
 import { useDispatch } from 'react-redux';
 
-const RemoveEmployee = (props) => {
+const RemoveEmployee = ({ id }) => {
   const dispatch = useDispatch();
 
   const removeHandler = (event) => {
     event.preventDefault();
-    dispatch(removeEmployee(props.id));
+    dispatch(removeEmployee(id));
   };
 
   return (

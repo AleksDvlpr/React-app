@@ -74,7 +74,6 @@ const LoginForm = () => {
           <label htmlFor="exampleInputPassword1" className="form-label">
             Password
           </label>
-          {loginError.toString()}
           <input
             type="password"
             className="form-control"

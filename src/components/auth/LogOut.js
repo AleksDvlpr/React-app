@@ -9,7 +9,7 @@ const LogOut = () => {
   const logOut = (event) => {
     event.preventDefault();
     localStorage.setItem('loggedIn', 0);
-    navigate('/');
+    navigate('/', { replace: true });
   };
 
   return loggedIn ? (

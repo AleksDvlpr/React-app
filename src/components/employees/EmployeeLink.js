@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import './EmployeeList.css';
 import RemoveEmployee from './RemoveEmployee';
 
-const EmployeeLink = (props) => {
-  const employee = props.data;
+const EmployeeLink = ({ employee }) => {
   const employeeTitle = `${employee.name} ${employee.secondName} (${employee.profession})`;
 
   return (
