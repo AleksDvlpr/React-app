@@ -17,9 +17,12 @@ export const employeeSlice = createSlice({
     addEmployee: (state, action) => {
       state.push(action.payload);
     },
+    removeEmployee: (state, action) => {
+      return state.filter((element) => element.id !== action.payload);
+    },
   },
 });
 
-export const { addEmployee } = employeeSlice.actions;
+export const { addEmployee, removeEmployee } = employeeSlice.actions;
 
 export default employeeSlice.reducer;

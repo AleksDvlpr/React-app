@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './EmployeeList.css';
+import RemoveEmployee from './RemoveEmployee';
 
 const EmployeeLink = (props) => {
   const employee = props.data;
@@ -13,7 +14,7 @@ const EmployeeLink = (props) => {
       aria-current="true"
     >
       {employeeTitle}
-      <button className="btn btn-danger btn-sm remove-employee">Remove</button>
+      <RemoveEmployee id={employee.id} />
     </Link>
   );
 };
