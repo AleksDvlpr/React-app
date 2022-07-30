@@ -5,7 +5,6 @@ const initialState = [
     id: '784ff1a8-1b95-4e8e-8667-e4210f167c54',
     name: 'John',
     secondName: 'Doe',
-    gender: 'male',
     profession: 'programmer',
     age: 25,
   },

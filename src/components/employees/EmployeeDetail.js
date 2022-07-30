@@ -32,11 +32,6 @@ const EmployeeDetail = () => {
             <td>{employee.secondName}</td>
           </tr>
           <tr>
-            <th scope="row">3</th>
-            <td>Gender</td>
-            <td>{employee.gender}</td>
-          </tr>
-          <tr>
             <th scope="row">4</th>
             <td>Age</td>
             <td>{employee.age}</td>

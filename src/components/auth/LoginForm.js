@@ -70,7 +70,7 @@ const LoginForm = () => {
           />
           {loginError ? (
             <div id="emailHelp" className="form-text text-danger">
-              Please type correct login
+              Please type correct a login
             </div>
           ) : null}
         </div>
