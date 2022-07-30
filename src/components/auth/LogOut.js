@@ -1,17 +1,14 @@
 import React from 'react';
 import './LogOut.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { setLoggedIn } from '../../features/user/userSlice';
 import { useNavigate } from 'react-router-dom';
 
 const LogOut = () => {
-  const dispatch = useDispatch();
   const navigate = useNavigate();
-  const loggedIn = useSelector((state) => state.user.loggedIn);
+  const loggedIn = +localStorage.getItem('loggedIn');
 
   const logOut = (event) => {
     event.preventDefault();
-    dispatch(setLoggedIn(false));
+    localStorage.setItem('loggedIn', 0);
     navigate('/');
   };
 

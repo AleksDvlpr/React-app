@@ -5,10 +5,9 @@ import EmployeeCreate from './components/employees/EmployeeCreate';
 import EmployeeDetail from './components/employees/EmployeeDetail';
 import EmployeeList from './components/employees/EmployeeList';
 import LogOut from './components/auth/LogOut';
-import { useSelector } from 'react-redux';
 
 function App() {
-  const loggedIn = useSelector((state) => state.user.loggedIn);
+  const loggedIn = localStorage.getItem('loggedIn');
 
   return (
     <div className="App">

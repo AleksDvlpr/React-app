@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './LoginForm.css';
-import { useDispatch } from 'react-redux';
-import { setLoggedIn } from '../../features/user/userSlice';
 import { useNavigate } from 'react-router-dom';
 
 const LoginForm = () => {
@@ -20,8 +18,6 @@ const LoginForm = () => {
 
   let authAllowed = true;
 
-  const dispatch = useDispatch();
-
   const onFormSubmit = (event) => {
     event.preventDefault();
 
@@ -35,7 +31,7 @@ const LoginForm = () => {
     }
 
     if (authAllowed) {
-      dispatch(setLoggedIn(true));
+      localStorage.setItem('loggedIn', 1);
       navigate('/employee');
     }
   };
