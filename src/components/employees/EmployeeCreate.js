@@ -15,6 +15,7 @@ const EmployeeCreate = () => {
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
   const onSubmit = (data) => {
     data.id = uuidv4();
     dispatch(addEmployee(data));

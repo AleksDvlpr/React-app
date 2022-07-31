@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import './LoginForm.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -54,13 +53,13 @@ const LoginForm = () => {
       </div>
       <form onSubmit={onFormSubmit}>
         <div className="mb-3">
-          <label htmlFor="exampleInputEmail1" className="form-label">
+          <label htmlFor="login" className="form-label">
             Login:
           </label>
           <input
             type="text"
             className="form-control"
-            id="exampleInputEmail1"
+            id="login"
             aria-describedby="emailHelp"
             onChange={onLoginChange}
           />
@@ -71,18 +70,18 @@ const LoginForm = () => {
           ) : null}
         </div>
         <div className="mb-3">
-          <label htmlFor="exampleInputPassword1" className="form-label">
+          <label htmlFor="password" className="form-label">
             Password
           </label>
           <input
             type="password"
             className="form-control"
-            id="exampleInputPassword1"
+            id="password"
             onChange={onPasswordChange}
           />
           {passwordError ? (
             <div id="emailHelp" className="form-text text-danger">
-              Please type correct password
+              Please type correct a password
             </div>
           ) : null}
         </div>

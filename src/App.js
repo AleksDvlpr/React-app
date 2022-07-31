@@ -9,6 +9,11 @@ import { Navigate } from 'react-router-dom';
 import NotFound from './components/404';
 
 function App() {
+  /*
+   * Врапперы использую для защиты роутов если юзер не авторизован.
+   * В 5-й версии react-router-dom можно было использовать компонент Redirect,
+   * но в 6-й убрали его. Приходится юзать врапперы
+   * */
   const LogInWrapper = ({ children }) => {
     const loggedIn = +localStorage.getItem('loggedIn');
     return loggedIn ? <Navigate to="/employee" replace /> : children;

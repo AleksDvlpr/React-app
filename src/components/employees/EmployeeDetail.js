@@ -37,12 +37,12 @@ const EmployeeDetail = () => {
             <td>{employee.secondName}</td>
           </tr>
           <tr>
-            <th scope="row">4</th>
+            <th scope="row">3</th>
             <td>Age</td>
             <td>{employee.age}</td>
           </tr>
           <tr>
-            <th scope="row">5</th>
+            <th scope="row">4</th>
             <td>Profession</td>
             <td>{employee.profession}</td>
           </tr>
